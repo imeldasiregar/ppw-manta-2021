@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal</title>
+    <link rel="stylesheet" href="Jadwal.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>MANTA</h2>
+            <h3>Manajemen Tugas Akhir</h3>
+            <ul>
+            <li><a href="Home.html" >Home</a></li>
+            <li><a href="Pendaftaran Mahasiswa TA.html" >Pendaftaran Mahasiswa TA</a></li>
+            <li><div class="dropdown">Persiapan TA
+              <div class="dropdown-content">
+                  <ol>
+                      <li><a href="Pengajuan Topik.html">Pengajuan Topik</li></a>
+                      <li><a href="kelompok dan dosen pembimbing.html">Pengajuan Kelompok dan Dosen Pembimbing</li></a>
+                  </ol>
+              </div>
+          </div></li>
+            <li><a href="Jadwal.html" >Jadwal</a></li>
+            <li><a href="Meeting Management.html" >Meeting Management</a</li>
+            <li><a href="Berita Acara.html" >Berita Acara</a</li>
+            <li><a href="Penilaian.html" >Penilaian</a></li>
+            <li><a href="Finalisasi.html" >Finalisasi</a></li>
+
+            </ul>
+
+        </div>
+        <div class="main_content">
+            <div class="header">12S19033 San Antonio Limbong</div>
+            <div class="judul"><h4>Jadwal</h4></div>
+            <div class="info">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Jadwal Bimbingan')"><b>Jadwal Bimbingan</b></button>
+                    <button class="tablinks" onclick="openCity(event, 'Jadwal Seminar')"><b>Jadwal Seminar</b></button>
+                  
+                  </div>
+                  <div id="Jadwal Bimbingan" class="tabcontent">
+                      <table>
+                          <tr>
+                              <th>No</th>
+                              <th>Mahasiswa</th>
+                              <th>Dosen Pembimbing</th>
+                              <th>Tanggal</th>
+                              <th>Waktu</th>
+                              
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Imelda Sarah Dwiva Siregar - 12S19020</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Petrus Aquanur Sinaga - 12S19025</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Jaime Christ Bonar Sirait - 12S19030</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>San Antonio Limbong - 12S19033</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>Pabertoni Panjaitan - 12S19038</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                
+                              </tr>
+                      </table>                      
+                  </div>
+
+                
+                <div id="Jadwal Seminar" class="tabcontent">
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>Mahasiswa</th>
+                            <th>Dosen Pembimbing</th>
+                            <th>Dosen Penguji</th>
+                            <th>Tanggal</th>
+                            <th>Waktu</th>
+                            
+                          </tr>
+                          <tr>
+                              <td>1</td>
+                              <td>Imelda Sarah Dwiva Siregar - 12S19020</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Petrus Aquanur Sinaga - 12S19025</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                             
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Jaime Christ Bonar Sirait - 12S19030</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>San Antonio Limbong - 12S19033</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Pabertoni Panjaitan - 12S19038</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              
+                            </tr>
+                    </table>            
+            </div>
+        </div>
+    </div>
+
+    <style>
+      table, th, td {
+        border: 2px solid black;
+      }
+      </style>
+
+
+
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+</body>
+
+</html>
