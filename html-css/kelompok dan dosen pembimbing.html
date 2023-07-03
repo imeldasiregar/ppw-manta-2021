@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penentuan Dosen Pembimbing dan Penguji</title>
+    <link rel="stylesheet" href="kelompok dan dosen pembimbing.css">
+</head>
+
+<body>
+    <div class="wrapper" >
+        <div class="sidebar">
+            <h2>MANTA</h2>
+            <h3>Manajemen Tugas Akhir</h3>
+            <ul>
+             <li><a href="Home.html" >Home</a></li>
+             <li><a href="Pendaftaran Mahasiswa TA.html" >Pendaftaran Mahasiswa TA</a></li>
+             <li><div class="dropdown">Persiapan TA
+                <div class="dropdown-content">
+                    <ol>
+                        <li><a href="Pengajuan Topik.html">Pengajuan Topik</li></a>
+                        <li><a href="kelompok dan dosen pembimbing.html">Pengajuan Kelompok dan Dosen Pembimbing</li></a>
+                    </ol>
+                </div>
+            </div></li>
+             <li><a href="Jadwal.html" >Jadwal</a></li>
+             <li><a href="Meeting Management.html" >Meeting Management</a</li>
+             <li><a href="berita acara.html" >Berita Acara</a</li>
+             <li><a href="Penilaian.html" >Penilaian</a></li>
+             <li><a href="Finalisasi.html" >Finalisasi</a></li>
+            </ul>
+
+        </div>
+        <div class="main_content" >
+            <div class="header">Imelda Siregar</div>
+            <div class="judul"><h4>Pengajuan Anggota Kelompok dan Dosen Pembimbing</h4></div>
+            <div class="grouping" >
+                <form action="/action_page.php">
+                    <label>Pilih kelompok TA :</label><br>
+                    <input type="checkbox" id="student1" name="student1" value="1">
+                    <label for="student1"> Imelda Siregar (12S19020)</label><br>
+                    <input type="checkbox" id="student2" name="student2" value="2">
+                    <label for="student2"> Petrus Sinaga (12S19025)</label><br>
+                    <input type="checkbox" id="student3" name="student3" value="3">
+                    <label for="student3"> Jaime Sirait (12S19030)</label><br>
+                    <input type="checkbox" id="student4" name="student4" value="4">
+                    <label for="student4"> San Antonio Limbong (12S19033)</label><br>
+                    <input type="checkbox" id="student5" name="student5" value="5">
+                    <label for="student5"> Pabertoni Panjaitan (12S19038)</label><br>
+                </div>
+                
+                <div class="reason-grp">
+                <br><label for="reason1">Alasan Memilih Kelompok: </label><br>
+                 <textarea class="reason1" type="input" id="reason1" name="reason1"></textarea>
+                </div>
+                
+                    <div class="dosbing">
+                    <form action="/action_page.php">
+                        <br><label>Pilih Dosen Pembimbing:</label><br>
+                        <input type="checkbox" id="dosbing1" name="dosbing1" value="A">
+                        <label for="dosbing1"> Dosen Pembimbing A</label><br>
+                        <input type="checkbox" id="dosbing2" name="dosbing2" value="B">
+                        <label for="dosbing2"> Dosen Pembimbing B</label><br>
+                        <input type="checkbox" id="dosbing3" name="dosbing3" value="C">
+                        <label for="dosbing3"> Dosen Pembimbing C</label><br>
+                        <input type="checkbox" id="dosbing4" name="dosbing4" value="D">
+                        <label for="dosbing4"> Dosen Pembimbing D</label><br>
+                        <input type="checkbox" id="dosbing5" name="dosbing5" value="E">
+                        <label for="dosbing5"> Dosen Pembimbing E</label><br>
+                        
+                    </form>
+                </div>
+
+                <div class="reason-dosbing">
+                    <br><label for="reason2">Alasan Memilih Dosen Pembimbing: </label>
+                    <textarea class="reason2" type="input" id="reason2" name="reason2"></textarea>
+                </div>
+
+                <input type="submit" class="submit" value="Submit">
+        </div>
+
+</body>
+
+</html>

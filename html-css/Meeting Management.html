@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom</title>
+    <link rel="stylesheet" href="Meeting Management.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>MANTA</h2>
+            <h3>Manajemen Tugas Akhir</h3>
+            <ul>
+              <li><a href="Home.html" >Home</a></li>
+              <li><a href="Pendaftaran Mahasiswa TA.html" >Pendaftaran Mahasiswa TA</a></li>
+              <li><div class="dropdown">Persiapan TA
+                  <div class="dropdown-content">
+                      <ol>
+                          <li><a href="Pengajuan Topik.html">Pengajuan Topik</li></a>
+                          <li><a href="kelompok dan dosen pembimbing.html">Pengajuan Kelompok dan Dosen Pembimbing</li></a>
+                      </ol>
+                  </div>
+              </div></li>
+              <li><a href="Jadwal.html" >Jadwal</a></li>
+              <li><a href="Meeting Management.html" >Meeting Management</a</li>
+              <li><a href="Berita Acara.html" >Berita Acara</a</li>
+              <li><a href="Penilaian.html" >Penilaian</a></li>
+              <li><a href="Finalisasi.html" >Finalisasi</a></li>
+            </ul>
+
+        </div>
+        <div class="main_content">
+            <div class="header"><i class="fas fa-user"></i>12S19033 San Antonio Limbong</div>
+            <div class="judul"><h4>Meeting</h4></div>
+            <div class="info">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Informasi Kegiatan')"><b>Informasi Kegiatan</b></button>
+                    <button class="tablinks" onclick="openCity(event, 'PIK')"><b>Perubahan Informasi Kegiatan</b></button>
+                  
+                  </div>
+                  <div id="Informasi Kegiatan" class="tabcontent">
+                    <table id="keterangan">
+                        <tr>
+                          <td>No Kelompok</td>
+                          <td>Kelompok 1</td>
+                        </tr>
+
+                        <tr>
+                            <td>Jenis Kegiatan</td>
+                            <td>Bimbingan Tugas Akhir</td>
+                        </tr>
+
+                        <tr>
+                            <td>ID Meeting</td>
+                            <td>195-899-2042</td>
+                        </tr>
+
+                        <tr>
+                          <td>Tanggal</td>
+                          <td>Senin - 1 Mei 2023</td>
+                        </tr>
+
+                        <tr>
+                          <td>Waktu</td>
+                          <td>15.00 - 16.00</td>
+                        </tr>
+
+                        <tr>
+                          <td>Status</td>
+                          <td>Disetujui</td>
+                        </tr>
+
+                        <tr>
+                          <td>Atas Persetujuan Oleh</td>
+                          <td>Dosen A</td>
+                        </tr>
+
+                        <tr>
+                          <td>ID Dosen </td>
+                          <td>1234567890</td>
+                        </tr>
+
+                        <tr>
+                          <td>Alamat Tautan</td>
+                          <td>meet xxx-yyy-zzz</td>
+                        </tr>
+
+                      </table>
+                                         
+                  </div>
+
+                
+                    <div id="PIK" class="tabcontent">
+                    <form action="judul.php" method="POST">
+                        <div class="section">
+                        <p>
+                            <label>Nomor Kelompok:</label>
+                            <select name="Nomor Kelompok">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Jenis Kegiatan:</label>
+                            <select name="Jenis Kegiatan">
+                                <option value="Bimbingan Tugas Akhir">Bimbingan Tugas Akhir</option>
+                                <option value="Seminar Proposal">Seminar Proposal</option>
+                                <option value="Seminar TA">Seminar TA</option>
+                                <option value="Sidang/Pra Sidang">Sidang/Pra Sidang</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>ID Meeting:</label>
+                            <input type="text" placeholder="Ketik disini..." />
+                        </p>
+                        <p>
+                            <label>Tanggal:</label>
+                            <input type="date" name="tanggal" />
+                        </p>
+                        <p>
+                            <label>Waktu:</label>
+                            <input type="time" name="waktu" />
+                        </p>
+                        </div>
+                        <div class="btn">
+                            <a href="#">Submit</a>
+                        </div>
+                    </form>           
+                </div>
+            </div>
+        </div>
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
